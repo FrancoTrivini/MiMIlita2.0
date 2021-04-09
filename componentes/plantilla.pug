@@ -1,0 +1,15 @@
+include config.pug
+
+doctype html
+html(lang="es")
+    
+    include head.pug 
+
+    body 
+
+        include header.pug 
+        include bienvenida.pug
+        block contenidos 
+        include footer.pug 
+        
+        include script.pug 

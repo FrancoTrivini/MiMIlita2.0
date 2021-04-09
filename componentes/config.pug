@@ -1,0 +1,10 @@
+-var enlaces= ["Promociones","Sobre Nosotros","Contacto"]
+//- mixins se crean asi, entre parentesis se ponen los datos variables
+mixin imagen(imagen,nombre,precio)
+    article.promociones__imagen 
+        //- para poner las variables en el codigo es con un+
+        img(src="../img/"+imagen, alt=""+nombre)
+        .promociones__imagen--hover
+        p #{nombre}
+        p #{precio}
+
